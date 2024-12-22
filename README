@@ -1,0 +1,114 @@
+# Valorant Agent Analysis
+
+## Overview
+This project analyzes agent performance in Valorant for the **Ascendant** rank, focusing on:
+- **Win Rates**: Determining which agents have the highest win rates.
+- **Performance Metrics**: Evaluating agents based on key metrics like Kill/Death Ratio (K/D), Average Damage Delta, and Average Combat Score (ACS).
+
+The project provides insights into agent effectiveness to help players and analysts better understand the meta.
+
+---
+
+## Features
+### 1. Win Rate Analysis
+- Calculates win rates for all agents in the Ascendant rank.
+- Visualizes win rates using bar charts.
+
+### 2. Performance Metrics
+- Analyzes and visualizes metrics:
+  - **K/D Ratio**: Ratio of kills to deaths.
+  - **Average Damage Delta**: Difference in average damage dealt and received.
+  - **ACS**: Average Combat Score, a key performance indicator in Valorant.
+
+---
+
+## Project Structure
+```
+valorant-data-science/
+├── prepare_data.py           # Script to filter data for Ascendant ranks
+├── analyze_win_rates.py      # Script to calculate and visualize win rates
+├── analyze_agent_metrics.py  # Script to analyze and visualize performance metrics
+├── valorant_games.csv        # Original dataset
+├── ascendant_data.csv        # Filtered dataset for Ascendant rank
+├── agent_win_rates.png       # Visualization of agent win rates
+├── agent_kdr.png             # Visualization of agent K/D ratios
+├── agent_avg_dmg_delta.png   # Visualization of agent average damage delta
+├── agent_acs.png             # Visualization of agent ACS
+└── README.md                 # Project documentation
+```
+
+---
+
+## Setup Instructions
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd valorant-data-science
+```
+
+### 2. Set Up Python Environment
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+2. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+3. Install dependencies:
+   ```bash
+   pip install pandas matplotlib seaborn
+   ```
+
+### 3. Run the Scripts
+#### Prepare the Data:
+```bash
+python prepare_data.py
+```
+
+#### Analyze Win Rates:
+```bash
+python analyze_win_rates.py
+```
+
+#### Analyze Performance Metrics:
+```bash
+python analyze_agent_metrics.py
+```
+
+---
+
+## Results
+### 1. Win Rate Analysis
+- **Visualization**: `agent_win_rates.png` displays the win rates for agents in the Ascendant rank.
+
+### 2. Performance Metrics Analysis
+- **Visualizations**:
+  - `agent_kdr.png`: K/D ratios by agent.
+  - `agent_avg_dmg_delta.png`: Average damage delta by agent.
+  - `agent_acs.png`: ACS by agent.
+
+---
+
+## Dataset
+### Source
+- Original data: `valorant_games.csv`
+- Filtered data for Ascendant rank: `ascendant_data.csv`
+- Dataset retrieved from [Kaggle - My First 1000 Valorant Games](https://www.kaggle.com/datasets/mitchellharrison/my-first-1000-valorant-games).
+
+---
+
+## Future Work
+- Incorporate additional ranks for comparative analysis.
+- Analyze map-specific performance for agents.
+- Explore machine learning models to predict match outcomes.
+
+---
+
+## CREATED BY RYAN PHAM 
+
